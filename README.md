@@ -13,6 +13,8 @@
 
 所有照片放在 `assets` 資料夾。請保留 HTML 檔案與整個 `assets` 資料夾的相對位置。
 
+`assets/og.png` 是網站的社群分享縮圖。各頁已使用 `https://sahajayogatw.github.io/The-Silence-Within/` 的完整公開網址設定 Open Graph、X/Twitter 圖片與 canonical URL。
+
 ## 本機查看
 
 直接以瀏覽器開啟 `index.html`，即可從首頁進入其餘頁面。
