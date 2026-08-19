@@ -2,6 +2,8 @@
 
 這是一套純 HTML、CSS 與少量原生 JavaScript 製作的靜態網站，可直接開啟，也可手動上傳至 GitHub Pages。沒有使用 React、網站框架或 ChatGPT 專屬技術。
 
+目前四個頁面均設有 `noindex` 搜尋引擎禁止收錄標記。正式準備公開收錄時，請移除各 HTML `<head>` 內的 robots meta 標記。
+
 ## 頁面
 
 - `index.html`：手機優先首頁
