@@ -19,6 +19,14 @@
     @media(max-width:599px){.page-intro{--intro-photo-height:clamp(300px,42svh,390px);position:relative;min-height:0;padding:calc(var(--intro-photo-height) + 38px) 22px 46px;display:block;color:var(--ink);background:var(--paper);overflow:hidden}.page-intro:before{content:"";position:absolute;z-index:0;inset:0 0 auto;height:var(--intro-photo-height);background:linear-gradient(rgba(7,29,25,.28),rgba(7,29,25,.04) 55%),url("assets/about-class.jpg") center 44%/cover no-repeat}.page-intro>*{position:relative;z-index:1}.page-intro .kicker{color:var(--lake)}.page-intro h1{font-size:clamp(30px,8vw,34px);line-height:1.45;margin-bottom:16px}.page-intro p:last-child{color:#3c5851;line-height:1.75}}
     @media(min-width:600px){.site-header{padding-inline:32px}.page-intro,.section,.page-links,footer{padding-left:max(32px,calc((100vw - 680px)/2));padding-right:max(32px,calc((100vw - 680px)/2))}}
     .page-links{flex-direction:column;gap:12px}.page-link-row{display:flex;justify-content:center;align-items:center}.page-links>.social-link{color:var(--lake);font-family:var(--sans);font-size:13px}
+    @media(min-width:900px){
+      .site-header{height:82px;padding:0 clamp(44px,5vw,92px)}.brand-copy strong{font-size:14px}.menu-button{display:none}
+      .mobile-nav{position:absolute;z-index:11;inset:0 clamp(44px,5vw,92px) auto auto;height:82px;width:auto;padding:0;display:flex;flex-direction:row;align-items:center;gap:26px;background:transparent;transform:none;transition:none}
+      .mobile-nav a{font-family:var(--sans);font-size:13px;letter-spacing:.04em;padding:8px 0;border:0;white-space:nowrap}.mobile-nav a[aria-current="page"]{border-bottom:1px solid rgba(255,255,255,.75)}.mobile-nav small{display:none}
+      .page-intro{min-height:clamp(520px,66vh,710px);padding:150px max(72px,calc((100vw - 1120px)/2)) 76px;background-position:center 48%}.page-intro h1{font-size:clamp(44px,3.7vw,58px);line-height:1.42;max-width:14em}.page-intro p:last-child{font-size:17px}
+      .section{padding:82px max(72px,calc((100vw - 820px)/2))}.section h2{font-size:34px}.body{font-size:16px;line-height:1.9}.principle{grid-template-columns:48px 1fr;padding:20px 0}.principle p{font-size:15px}.quote{font-size:23px}
+      .page-links{padding-top:38px;padding-bottom:38px}
+    }
   </style>
 </head>
 <body>

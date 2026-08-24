@@ -29,6 +29,17 @@
     @media(min-width:600px){.site-header{padding-inline:32px}.hero-copy,.experience-copy,.work,.gateways,footer{padding-left:max(32px,calc((100vw - 680px)/2));padding-right:max(32px,calc((100vw - 680px)/2))}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.mobile-nav{transition:none}}
     .social-link{display:block;width:max-content;margin:14px auto 0;color:var(--lake);font-size:13px;text-decoration:none}
+    @media(min-width:900px){
+      .site-header{height:82px;padding:0 clamp(44px,5vw,92px)}
+      .brand-copy strong{font-size:14px}.brand-copy span{font-size:11px}.menu-button{display:none}
+      .mobile-nav{position:absolute;z-index:11;inset:0 clamp(44px,5vw,92px) auto auto;height:82px;width:auto;padding:0;display:flex;flex-direction:row;align-items:center;gap:26px;background:transparent;transform:none;transition:none}
+      .mobile-nav a{font-family:var(--sans);font-size:13px;letter-spacing:.04em;padding:8px 0;border:0;white-space:nowrap}.mobile-nav a[aria-current="page"]{border-bottom:1px solid rgba(255,255,255,.75)}.mobile-nav small{display:none}
+      .hero{min-height:700px}.hero img{object-position:center center}.hero:after{background:linear-gradient(90deg,rgba(7,29,25,.5) 0%,rgba(7,29,25,.18) 42%,rgba(7,29,25,.02) 68%),linear-gradient(0deg,rgba(7,29,25,.58),transparent 48%)}
+      .hero-copy{width:min(1180px,calc(100% - 112px));margin:0 auto;padding:0 0 clamp(82px,10vh,118px)}.hero h1{font-size:clamp(50px,4.1vw,68px);margin-bottom:18px}.hero-lede{font-size:22px;line-height:1.6}.hero-note{font-size:14px}.line-link{font-size:14px;margin-top:22px}
+      .experience{display:grid;grid-template-columns:minmax(430px,.86fr) minmax(560px,1.14fr);min-height:620px}.experience-copy{display:flex;flex-direction:column;justify-content:center;padding:80px clamp(60px,8vw,150px)}.experience h2{font-size:clamp(38px,3vw,50px);line-height:1.48}.experience-photo{height:100%;min-height:620px;object-position:center 44%}
+      .work{padding:110px max(72px,calc((100vw - 1080px)/2)) 100px}.work h2{font-size:clamp(38px,3vw,48px);max-width:19em}.work-copy{font-size:16px;max-width:48em}
+      .gateways{padding:48px max(72px,calc((100vw - 1080px)/2)) 52px}.gateway{font-size:16px}.social-link{margin-top:17px}
+    }
   </style>
 </head>
 <body>
