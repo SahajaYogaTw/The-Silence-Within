@@ -28,6 +28,7 @@
     @media(max-width:599px){.mobile-line{display:block}.desktop-break{display:none}.experience h2{font-size:28px;line-height:1.55}}
     @media(min-width:600px){.site-header{padding-inline:32px}.hero-copy,.experience-copy,.work,.gateways,footer{padding-left:max(32px,calc((100vw - 680px)/2));padding-right:max(32px,calc((100vw - 680px)/2))}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.mobile-nav{transition:none}}
+    .social-link{display:block;width:max-content;margin:14px auto 0;color:var(--lake);font-size:13px;text-decoration:none}
   </style>
 </head>
 <body>
@@ -37,7 +38,7 @@
     <section class="hero"><img src="assets/home-lake-clean.png" alt="清晨薄霧中的湖面，一位練習者在水邊安靜靜坐"><div class="hero-copy"><h1>還你本來的寧靜</h1><p class="hero-lede"><span class="mobile-line">不用拉筋，也不用刻意</span><span class="mobile-line">壓制腦中的紛亂。</span></p><p class="hero-note">一個簡單、自然的靜坐方法</p><a class="line-link" href="activities.html">看看近期活動 →</a></div></section>
     <section class="experience"><div class="experience-copy"><h2><span class="mobile-line">坐不住，就是坐不住。</span><br class="desktop-break"><span class="mobile-line">是有原因的，</span><span class="mobile-line">也是有方法的。</span></h2><p class="experience-text">靜坐不是要去抵抗腦中的聲音。<br>而是學會輕輕地與它保持一點距離。<br>我們會陪伴你練習。</p></div><img class="experience-photo" src="assets/about-class.jpg" alt="真實課程中，參與者一起安靜練習靜坐"></section>
     <section class="work"><p class="kicker">我們在做什麼</p><h2><span class="mobile-line">把能帶進日常生活的</span><span class="mobile-line">靜坐方法，</span><br class="desktop-break"><span class="mobile-line">好好地分享出去。</span></h2><p class="work-copy">我們舉辦免費的靜坐體驗與基礎課程，讓每一個渴望內在寧靜的人，都能找到屬於自己的喜樂與靜默。</p></section>
-    <section class="gateways" aria-label="主要入口"><div class="gateway-list"><a class="gateway" href="activities.html"><strong>近期活動</strong></a><a class="gateway" href="about.html"><strong>認識我們</strong></a><a class="gateway" href="cooperate.html"><strong>合作洽詢</strong></a></div></section>
+    <section class="gateways" aria-label="主要入口"><div class="gateway-list"><a class="gateway" href="activities.html"><strong>近期活動</strong></a><a class="gateway" href="about.html"><strong>認識我們</strong></a><a class="gateway" href="cooperate.html"><strong>合作洽詢</strong></a></div><a class="social-link" href="https://lin.ee/pckyV9F" target="_blank" rel="noopener">官方 LINE ↗</a></section>
   </main>
   <script>const b=document.querySelector('.menu-button'),n=document.querySelector('.mobile-nav');function closeMenu(){b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','開啟主要導覽');n.classList.remove('open');document.body.style.overflow=''}b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',String(o));b.setAttribute('aria-label',o?'關閉主要導覽':'開啟主要導覽');n.classList.toggle('open',o);document.body.style.overflow=o?'hidden':''});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});</script>
 </body>
