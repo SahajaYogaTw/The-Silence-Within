@@ -1,0 +1,37 @@
+:root{--ink:#17372f;--deep:#0d2b25;--lake:#496f65;--mist:#e8eee8;--paper:#f6f3eb;--line:rgba(23,55,47,.22);--serif:"Noto Serif TC","Songti TC","PMingLiU",serif;--sans:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.75}
+a{color:inherit}
+button{font:inherit}
+.site-header{position:absolute;inset:0 0 auto;z-index:10;height:70px;padding:0 18px;display:flex;align-items:center;color:#fff}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.mark{font-size:13px}
+.brand-copy{display:flex;flex-direction:column;line-height:1.35}
+.brand-copy strong{font-family:var(--serif);font-size:13px;letter-spacing:.06em}
+.brand-copy span{font-size:11px;letter-spacing:.08em}
+.menu-button{margin-left:auto;width:44px;height:44px;border:0;background:transparent;color:inherit;display:grid;place-items:center}
+.menu-icon,.menu-icon:before,.menu-icon:after{content:"";display:block;width:23px;height:1px;background:currentColor;position:relative}
+.menu-icon:before{position:absolute;top:-7px}
+.menu-icon:after{position:absolute;top:7px}
+.menu-button[aria-expanded=true] .menu-icon{background:transparent}
+.menu-button[aria-expanded=true] .menu-icon:before{top:0;transform:rotate(45deg)}
+.menu-button[aria-expanded=true] .menu-icon:after{top:0;transform:rotate(-45deg)}
+.mobile-nav{position:fixed;z-index:9;inset:0;background:var(--deep);color:#fff;display:flex;flex-direction:column;transform:translateY(-102%)}
+.mobile-nav.open{transform:none}
+.mobile-nav a{font-family:var(--serif);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.18)}
+.mobile-nav a[aria-current="page"]{border-bottom-color:rgba(255,255,255,.72)}
+.mobile-nav small{margin-top:auto;opacity:.65}
+footer{background:var(--deep);color:#dce5df;padding:32px 22px;text-align:center}
+.footer-name{font-family:var(--serif);font-size:14px;letter-spacing:.04em;margin:0 0 10px}
+.footer-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 16px;font-size:12px;color:#b9cac2}
+.footer-link{color:inherit;text-underline-offset:4px}
+@media(min-width:600px){.site-header{padding-inline:32px}}
+@media(min-width:900px){
+  .site-header{height:82px;padding:0 clamp(44px,5vw,92px)}
+  .brand-copy strong{font-size:14px}
+  .menu-button{display:none}
+  .mobile-nav{position:absolute;z-index:11;inset:0 clamp(44px,5vw,92px) auto auto;height:82px;width:auto;padding:0;display:flex;flex-direction:row;align-items:center;background:transparent;transform:none;transition:none}
+  .mobile-nav a{font-family:var(--sans);font-size:13px;padding:8px 0;border:0;white-space:nowrap}
+  .mobile-nav a[aria-current="page"]{border-bottom:1px solid rgba(255,255,255,.75)}
+  .mobile-nav small{display:none}
+}
